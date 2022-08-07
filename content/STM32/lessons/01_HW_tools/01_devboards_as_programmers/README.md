@@ -23,7 +23,11 @@ Connect BluePill or BluePill+ to USB-UART, boot into programming mode and erase 
 
 After installation on Windows there will be 2 new devices in Device Manager needed manual driver installation from [Zadig](https://zadig.akeo.ie/) utility:
 - Black Magic Firmware Upgrade (SWLink) : install as `libusbK` driver
-- Black Magic Trace Capture : install as `WinUSB` driver 
+- Black Magic Trace Capture : install as `WinUSB` driver
+
+Opinion:
+
+ *NB!* : after flashing with BMP SWlink firmware the MCU will stop beeing detected if connected with STLink. Further change of firmware can be done only with USB-UART adapter.
 
 ### 1.3. As J-Link
 The developers of SEGGER J-Link created the instructionf to convert the ST-Link into J-Link ([official instructions](https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/)). However, it can be done if your ST-Link has firmware variation for STM32 only.
