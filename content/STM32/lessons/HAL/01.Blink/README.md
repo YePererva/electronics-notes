@@ -10,7 +10,7 @@ As a training example: Nucleo-G474 with built-in LED, named in CubeIDE as LD2 (P
 
 
 
-place this structure in while loop:
+place this structure in `while` loop:
 ```
 // sets the pin high
 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
@@ -38,7 +38,7 @@ int delay_time = 200;
 // #define delay_time 200
 ```
 
-place this structure in while loop:
+place this structure in `while` loop:
 ```
 // toggle the state of pin
 HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
@@ -64,7 +64,7 @@ int delay_time = 200;
 unsigned long last_tick;
 ```
 
-Place this code before while loop:
+Place this code before `while` loop:
 ```
 // This will provide the timepoint which will be used later to compare time with
 last_tick = HAL_GetTick();
@@ -78,7 +78,7 @@ I placed it between:
 ```
 
 
-place this structure in while loop:
+place this structure in `while` loop:
 ```
 // if more time passed than
 if (HAL_GetTick() - last_tick > delay_time){
@@ -131,7 +131,7 @@ between lines:
 /* USER CODE END 2 */
 ```
 
-Place the following code to while loop:
+Place the following code to `while` loop:
 ```
 // if LED is OFF
 if (led_state == 0) {
@@ -165,7 +165,7 @@ can be replaced with simple :
 } else {
 ```
 
-However, it might be better to replace the whole loop with:
+However, it might be better to replace the `whole` loop with:
 
 ```
 unsigned long current_tick = HAL_GetTick();
