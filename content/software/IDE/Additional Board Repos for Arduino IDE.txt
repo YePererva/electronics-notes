@@ -24,3 +24,7 @@ LGT8F328P (search for lgt8fx boards):
 
 GD32 (didn't manage to make working):
 	https://raw.githubusercontent.com/CommunityGD32Cores/GD32Core-New/main/package_gd32_index.json
+
+Controlino PLC
+	- https://raw.githubusercontent.com/CONTROLLINO-PLC/CONTROLLINO_Library/master/Boards/package_ControllinoHardware_index.json
+	- https://github.com/CONTROLLINO-PLC/CONTROLLINO_Library
